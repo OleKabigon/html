@@ -1,0 +1,238 @@
+/* h1 {
+    color:purple;
+} */
+
+/* selector { property:value; } */
+
+
+/* reset margin and padding at the beginning */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color:#e1dcdc;
+    color:#000000;
+/*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter; */
+
+    font: normal 18px Arial, Helvetica, sans-serif;
+
+    line-height: 1.5em;
+    margin: 0;
+}
+
+
+        /* This section changes how links behave depending on their state */
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    color:blue;
+}
+
+a:active{
+    color:red;
+}
+
+/* a:visited{
+    color:white;
+} */
+        /* End of link behavior */
+
+
+        /* creating class of container */
+.container{
+    width: 80%;
+    margin: auto;
+}
+        /* creating button class */
+.button{
+    background-color: blue;
+    color: #fff;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 15px;
+}
+        /* changing how buttons behave depending on state */
+.button:hover{
+    background: red;
+    color: #FFFF00;
+}
+
+/* .button:visited{
+    background: white;
+    color: black;
+} */
+
+.clr{
+    clear: both;
+    /* This allows clear space around sections */
+}
+
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+    /* each border side can be modified individually */
+    /* use border right, left, etc... */
+    border: 3px red solid;
+    border-bottom-style: dotted;
+
+    padding: 20px;
+
+    /* margin-top: 30px; */
+    margin: 30px 10px;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    word-spacing: 1em;
+    margin-bottom: 20px;
+
+}
+
+.box-2{
+    background-color: #444;
+    color: #fff;
+    /* each border side can be modified individually */
+    /* use border right, left, etc... */
+    border: 1px red solid;
+    padding: 20px;
+    /* margin-top: 30px; */
+    margin: 30px 0;
+}
+
+.box-2 h1{
+    border: 3px solid #aaa;
+    padding: 10px;
+    margin: 10px;
+    font-family: georgia;
+    font-weight: 1000;
+    font-style:normal;
+    text-decoration:underline;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    word-spacing: 1em;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.categories{
+    border: 3px #ccc solid;
+    padding: 10px;
+    /* radius gives rounded corner */
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 2px purple;
+    /* list style using check mark image instead of dots */
+    list-style-image: url('../img/check.png');
+}
+
+.form-one{
+    padding: 20px;
+
+}
+
+.form-one .form-group{
+    padding-bottom: 7px;
+}
+
+/* Moves text input to block level below */
+.form-one label{
+    display:block;
+}
+
+.form-one input[type="text"], .form-one [type="email"] {
+    padding: 8px;
+    width: 75%;
+}
+
+/* .form-one input[type='Submit']{
+    background-color: #ff6ef3;
+    color: #fff;
+    padding: 10px 15px;
+} */
+.form-one textarea{
+    width: 50%;
+    padding: 9px;
+}
+
+        /* alignment and floating */
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid blue;
+    padding: 10px;
+    /* box sizing allows the sections to be on one line */
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: left;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../img/1.jpeg');
+}
+
+.p-box h1{
+    position: sticky;
+    top: 100px;
+    left: 300px;
+    color: #fff
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    color: #fff
+}
+
+.fix-me{
+    position: fixed;
+    top: 600px;
+}
